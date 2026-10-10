@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CaféFlow cafeteria ticketing and digital queue system.">
+  <title>My Orders | CaféFlow</title>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/data.js" defer></script>
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container navbar">
+    <a class="brand" href="index.html" aria-label="CaféFlow home">
+      <span class="brand-mark"><i class="fa-solid fa-ticket"></i></span>
+      <span>CaféFlow</span>
+    </a>
+
+    <nav class="nav-links" id="mainNav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="queue.html">Live Queue</a>
+      <a href="history.html">My Orders</a>
+      <a href="staff.html">Staff</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle dark and light mode">
+        <i class="fa-solid fa-moon" id="themeIcon"></i>
+      </button>
+      <a class="btn btn-accent" href="checkout.html">
+        <i class="fa-solid fa-basket-shopping"></i>
+        Cart <span data-cart-count>0</span>
+      </a>
+      <button class="icon-btn menu-toggle" id="menuToggle" aria-label="Open navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </div>
+</header>
+<main class="page-shell">
+  <section class="page-hero">
+    <div class="container page-hero-box fade-up">
+      <p class="eyebrow"><i class="fa-solid fa-clock-rotate-left"></i> Order history</p>
+      <h1>Your recent CaféFlow tickets.</h1>
+      <p>Orders created on this browser are stored locally for this frontend demo.</p>
+    </div>
+  </section>
+
+  <section class="section-sm">
+    <div class="container">
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Ticket</th>
+              <th>Date / time</th>
+              <th>Items</th>
+              <th>Total</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="historyBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html">
+          <span class="brand-mark"><i class="fa-solid fa-ticket"></i></span>
+          <span>CaféFlow</span>
+        </a>
+        <p style="max-width:360px;color:var(--muted);margin-top:14px">
+          A fast cafeteria ordering and ticketing experience for customers and staff.
+        </p>
+      </div>
+
+      <div>
+        <h4>Customer</h4>
+        <div class="footer-links">
+          <a href="menu.html">Browse menu</a>
+          <a href="checkout.html">Checkout</a>
+          <a href="queue.html">Check ticket</a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Staff</h4>
+        <div class="footer-links">
+          <a href="staff.html">Order dashboard</a>
+          <a href="availability.html">Menu availability</a>
+          <a href="analytics.html">Analytics</a>
+        </div>
+      </div>
+
+      <div>
+        <h4>System</h4>
+        <div class="footer-links">
+          <a href="about.html">How it works</a>
+          <a href="history.html">Order history</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 CaféFlow. Synthesis project built with HTML, CSS and JavaScript.</span>
+      <span>Order. Ticket. Track. Collect.</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
